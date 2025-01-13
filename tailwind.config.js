@@ -37,6 +37,7 @@ module.exports = {
           8: "#E5E7EB",
         },
         primary: "#35AD41",
+        "green-light": "#16c428",
         "blue-dark": "#1B44C8",
         secondary: "#219B9D",
         "body-color": "#637381",

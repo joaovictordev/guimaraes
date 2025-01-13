@@ -2143,6 +2143,11 @@ body {
   background-color: rgb(17 25 40 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-green-light:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 196 40 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-primary:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(53 173 65 / var(--tw-bg-opacity));
