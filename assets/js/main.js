@@ -5,33 +5,11 @@
   window.onscroll = function () {
     const ud_header = document.querySelector(".ud-header");
     const sticky = ud_header.offsetTop;
-    const logo = document.querySelectorAll(".header-logo");
 
     if (window.pageYOffset > sticky) {
       ud_header.classList.add("sticky");
     } else {
       ud_header.classList.remove("sticky");
-    }
-
-    if(logo.length) {
-      // === logo change
-      if (ud_header.classList.contains("sticky")) {
-        document.querySelector(".header-logo").src =
-          "assets/images/logo/logo.svg"
-      } else {
-        document.querySelector(".header-logo").src =
-          "assets/images/logo/logo-white.svg"
-      }
-    }
-
-    if (document.documentElement.classList.contains("dark")) {
-      if(logo.length) {
-        // === logo change
-        if (ud_header.classList.contains("sticky")) {
-          document.querySelector(".header-logo").src =
-            "assets/images/logo/logo-white.svg"
-        } 
-      }
     }
 
     // show or hide the back-top-top button
@@ -118,7 +96,7 @@
     scrollTo(document.documentElement);
   };
 
-    /* ========  themeSwitcher start ========= */
+  /* ========  themeSwitcher start ========= */
 
   // themeSwitcher
   const themeSwitcher = document.getElementById('themeSwitcher');
@@ -126,6 +104,26 @@
   // Theme Vars
   const userTheme = localStorage.getItem('theme');
   const systemTheme = window.matchMedia('(prefers-color0scheme: dark)').matches;
+
+  // change logo
+  const setLogo = () => {
+    // const hasheaderLogo = document.querySelectorAll(".header-logo");
+    const isDark = document.documentElement.classList.contains("dark")
+    const headerLogo = document.querySelector(".header-logo")
+
+    console.log(isDark)
+    if (headerLogo) {
+      if (isDark) {
+        headerLogo.src =
+          "assets/images/logo/logo-white.svg"
+      } else {
+        headerLogo.src =
+          "assets/images/logo/logo.svg"
+      }
+    }
+
+    console.log(headerLogo)
+  }
 
   // Initial Theme Check
   const themeCheck = () => {
@@ -150,9 +148,11 @@
   // call theme switch on clicking buttons
   themeSwitcher.addEventListener('click', () => {
     themeSwitch();
+    setLogo()
   });
 
   // invoke theme check on initial load
   themeCheck();
+  setLogo()
   /* ========  themeSwitcher End ========= */
 })();
