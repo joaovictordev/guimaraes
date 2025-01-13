@@ -912,6 +912,10 @@ body {
   margin-top: 6px;
 }
 
+.mt-6{
+  margin-top: 1.5rem;
+}
+
 .block{
   display: block;
 }
@@ -1144,6 +1148,10 @@ body {
   resize: both;
 }
 
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -1198,6 +1206,10 @@ body {
 
 .gap-\[22px\]{
   gap: 22px;
+}
+
+.gap-2{
+  gap: 0.5rem;
 }
 
 .overflow-hidden{
@@ -1274,6 +1286,14 @@ body {
 
 .border-t{
   border-top-width: 1px;
+}
+
+.border-r-2{
+  border-right-width: 2px;
+}
+
+.border-r-4{
+  border-right-width: 4px;
 }
 
 .border-\[\#8890A4\]{
@@ -1812,6 +1832,16 @@ body {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-400{
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(33 43 54 / var(--tw-text-opacity));
 }
 
 .text-opacity-70{
