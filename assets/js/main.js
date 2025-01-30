@@ -121,8 +121,29 @@
           "assets/images/logo/logo.svg"
       }
     }
+  }
 
-    console.log(headerLogo)
+  // change brands
+  const setBrands = () => {
+    const isDark = document.documentElement.classList.contains("dark")
+    const nexceraHeaderLogo = document.querySelector("#nexcera-header-logo")
+    const nexmHeaderLogo = document.querySelector("#nexm-header-logo")
+
+    console.log({ isDark, nexceraHeaderLogo, nexmHeaderLogo })
+
+    if (nexceraHeaderLogo && nexmHeaderLogo) {
+      if (isDark) {
+        nexceraHeaderLogo.src =
+          "assets/images/brands/nexcera-white.svg"
+        nexmHeaderLogo.src =
+          "assets/images/brands/nexm-white.svg"
+      } else {
+        nexceraHeaderLogo.src =
+          "assets/images/brands/nexcera.svg"
+        nexmHeaderLogo.src =
+          "assets/images/brands/nexm.svg"
+      }
+    }
   }
 
   // Initial Theme Check
@@ -149,10 +170,12 @@
   themeSwitcher.addEventListener('click', () => {
     themeSwitch();
     setLogo()
+    setBrands()
   });
 
   // invoke theme check on initial load
   themeCheck();
   setLogo()
+  setBrands()
   /* ========  themeSwitcher End ========= */
 })();
