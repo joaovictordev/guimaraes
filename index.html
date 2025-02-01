@@ -170,7 +170,7 @@
               </div>
               <div class="flex flex-wrap gap-2 justify-between items-center border p-4 rounded-md">
                 <div>
-                  <p class="text-xl font-bold text-primary">6</p>
+                  <p class="text-xl font-bold text-primary">24</p>
                   <p class="text-base dark:text-dark-6 text-body-color">Estados brasileiros</p>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -625,97 +625,303 @@
   <!-- ====== CTA Section End -->
 
   <!-- ====== Portfolio Section Start -->
-  <section id="portfolio" x-data="
-   {
-   showCards: 'all',
-   activeClasses: 'bg-primary text-white',
-   inactiveClasses: 'text-body-color dark:text-dark-6 hover:bg-primary hover:text-white',
-   }
-   " class="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] dark:bg-dark">
+  <section class="bg-tg-bg dark:bg-dark-2 pt-20 pb-10 lg:pt-[120px] lg:pb-20">
     <div class="container mx-auto">
-      <div class="-mx-4 flex flex-wrap">
+      <div class="flex flex-wrap -mx-4">
         <div class="w-full px-4">
           <div class="mx-auto mb-[60px] max-w-[510px] text-center">
-            <span class="text-primary mb-2 block text-lg font-semibold">
+            <span class="block mb-2 text-lg font-semibold text-primary">
               Portfólio
             </span>
-            <h2 class="text-dark dark:text-white mb-3 text-3xl leading-[1.208] font-bold sm:text-4xl md:text-[40px]">
-              Projetos recentes
+            <h2 class="text-dark dark:text-white mb-3 text-3xl leading-[1.2] font-bold sm:text-4xl md:text-[40px]">
+              Estamos em quase todo o território brasileiro
             </h2>
-            <p class="text-body-color text-base dark:text-dark-6">
-              Diveresas instituições comfiam nos nossos serviços. Conheça abaixo alguns dos clientes com os quais
-              fizemos parceria e que confiam no qualidade das nossas entregas.
+            <p class="text-base text-body-color dark:text-dark-6">
+              Grandes empresas são nossos clientes e atestam a qualidade dos nossos serviços
             </p>
           </div>
         </div>
       </div>
-      <div class="-mx-4 flex flex-wrap">
-        <div :class="showCards == 'all' || showCards == 'branding' ? 'block' : 'hidden' "
-          class="w-full px-4 md:w-1/2 xl:w-1/3">
-          <div class="relative mb-12">
-            <div class="overflow-hidden rounded-[10px]">
-              <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-01/image-01.jpg"
-                alt="portfolio" class="w-full" />
-            </div>
-            <div
-              class="relative z-10 mx-7 -mt-20 rounded-lg bg-white dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark">
-              <span class="text-primary mb-2 block text-sm font-medium">
-                Branding
-              </span>
-              <h3 class="text-dark dark:text-white mb-5 text-xl font-bold">
-                Branding Design
-              </h3>
-              <a href="javascript:void(0)"
-                class="text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium transition hover:text-white">
-                View Details
-              </a>
+
+      <div class="flex flex-wrap justify-center -mx-4">
+        <div class="w-full px-4 md:w-1/2 xl:w-1/4">
+          <div class="mx-auto mb-10 w-full max-w-[370px]">
+            <div class="relative overflow-hidden rounded-lg">
+              <img src="./assets/images/portfolio/image-1.png" alt="image" class="w-full">
+              <div class="absolute left-0 w-full text-center bottom-5">
+                <div class="relative px-3 py-5 mx-5 overflow-hidden bg-white rounded-lg dark:bg-dark-2">
+                  <h3 class="text-base font-semibold text-dark dark:text-white">
+                    SE Macapá 3
+                  </h3>
+                  <p class="text-xs text-body-color dark:text-dark-6">
+                    Macapá - AP
+                  </p>
+                  <div>
+                    <span class="absolute bottom-0 left-0">
+                      <svg width="61" height="30" viewBox="0 0 61 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="45" r="45" fill="#13C296" fill-opacity="0.11"></circle>
+                      </svg>
+                    </span>
+                    <span class="absolute top-0 right-0">
+                      <svg width="20" height="25" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="0.706257" cy="24.3533" r="0.646687" transform="rotate(-90 0.706257 24.3533)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="24.3533" r="0.646687" transform="rotate(-90 6.39669 24.3533)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="24.3533" r="0.646687" transform="rotate(-90 12.0881 24.3533)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="24.3533" r="0.646687" transform="rotate(-90 17.7785 24.3533)"
+                          fill="#3056D3"></circle>
+                        <circle cx="0.706257" cy="18.6624" r="0.646687" transform="rotate(-90 0.706257 18.6624)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="18.6624" r="0.646687" transform="rotate(-90 6.39669 18.6624)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="18.6624" r="0.646687" transform="rotate(-90 12.0881 18.6624)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="18.6624" r="0.646687" transform="rotate(-90 17.7785 18.6624)"
+                          fill="#3056D3"></circle>
+                        <circle cx="0.706257" cy="12.9717" r="0.646687" transform="rotate(-90 0.706257 12.9717)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="12.9717" r="0.646687" transform="rotate(-90 6.39669 12.9717)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="12.9717" r="0.646687" transform="rotate(-90 12.0881 12.9717)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="12.9717" r="0.646687" transform="rotate(-90 17.7785 12.9717)"
+                          fill="#3056D3"></circle>
+                        <circle cx="0.706257" cy="7.28077" r="0.646687" transform="rotate(-90 0.706257 7.28077)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="7.28077" r="0.646687" transform="rotate(-90 6.39669 7.28077)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="7.28077" r="0.646687" transform="rotate(-90 12.0881 7.28077)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="7.28077" r="0.646687" transform="rotate(-90 17.7785 7.28077)"
+                          fill="#3056D3"></circle>
+                        <circle cx="0.706257" cy="1.58989" r="0.646687" transform="rotate(-90 0.706257 1.58989)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="1.58989" r="0.646687" transform="rotate(-90 6.39669 1.58989)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="1.58989" r="0.646687" transform="rotate(-90 12.0881 1.58989)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="1.58989" r="0.646687" transform="rotate(-90 17.7785 1.58989)"
+                          fill="#3056D3"></circle>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div :class="showCards == 'all' || showCards == 'marketing' ? 'block' : 'hidden' "
-          class="w-full px-4 md:w-1/2 xl:w-1/3">
-          <div class="relative mb-12">
-            <div class="overflow-hidden rounded-[10px]">
-              <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-01/image-02.jpg"
-                alt="portfolio" class="w-full" />
-            </div>
-            <div
-              class="relative z-10 mx-7 -mt-20 rounded-lg bg-white dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark">
-              <span class="text-primary mb-2 block text-sm font-medium">
-                Marketing
-              </span>
-              <h3 class="text-dark dark:text-white mb-5 text-xl font-bold">
-                Best Marketing tips
-              </h3>
-              <a href="javascript:void(0)"
-                class="text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium transition hover:text-white">
-                View Details
-              </a>
+        <div class="w-full px-4 md:w-1/2 xl:w-1/4">
+          <div class="mx-auto mb-10 w-full max-w-[370px]">
+            <div class="relative overflow-hidden rounded-lg">
+              <img src="./assets/images/portfolio/image-2.png" alt="image" class="w-full">
+              <div class="absolute left-0 w-full text-center bottom-5">
+                <div class="relative px-3 py-5 mx-5 overflow-hidden bg-white rounded-lg dark:bg-dark-2">
+                  <h3 class="text-base font-semibold text-dark dark:text-white">
+                    CS Presidente Altino
+                  </h3>
+                  <p class="text-xs text-body-color dark:text-dark-6">
+                    São Paulo - SP
+                  </p>
+                  <div>
+                    <span class="absolute bottom-0 left-0">
+                      <svg width="61" height="30" viewBox="0 0 61 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="45" r="45" fill="#13C296" fill-opacity="0.11"></circle>
+                      </svg>
+                    </span>
+                    <span class="absolute top-0 right-0">
+                      <svg width="20" height="25" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="0.706257" cy="24.3533" r="0.646687" transform="rotate(-90 0.706257 24.3533)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="24.3533" r="0.646687" transform="rotate(-90 6.39669 24.3533)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="24.3533" r="0.646687" transform="rotate(-90 12.0881 24.3533)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="24.3533" r="0.646687" transform="rotate(-90 17.7785 24.3533)"
+                          fill="#3056D3"></circle>
+                        <circle cx="0.706257" cy="18.6624" r="0.646687" transform="rotate(-90 0.706257 18.6624)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="18.6624" r="0.646687" transform="rotate(-90 6.39669 18.6624)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="18.6624" r="0.646687" transform="rotate(-90 12.0881 18.6624)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="18.6624" r="0.646687" transform="rotate(-90 17.7785 18.6624)"
+                          fill="#3056D3"></circle>
+                        <circle cx="0.706257" cy="12.9717" r="0.646687" transform="rotate(-90 0.706257 12.9717)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="12.9717" r="0.646687" transform="rotate(-90 6.39669 12.9717)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="12.9717" r="0.646687" transform="rotate(-90 12.0881 12.9717)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="12.9717" r="0.646687" transform="rotate(-90 17.7785 12.9717)"
+                          fill="#3056D3"></circle>
+                        <circle cx="0.706257" cy="7.28077" r="0.646687" transform="rotate(-90 0.706257 7.28077)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="7.28077" r="0.646687" transform="rotate(-90 6.39669 7.28077)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="7.28077" r="0.646687" transform="rotate(-90 12.0881 7.28077)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="7.28077" r="0.646687" transform="rotate(-90 17.7785 7.28077)"
+                          fill="#3056D3"></circle>
+                        <circle cx="0.706257" cy="1.58989" r="0.646687" transform="rotate(-90 0.706257 1.58989)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="1.58989" r="0.646687" transform="rotate(-90 6.39669 1.58989)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="1.58989" r="0.646687" transform="rotate(-90 12.0881 1.58989)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="1.58989" r="0.646687" transform="rotate(-90 17.7785 1.58989)"
+                          fill="#3056D3"></circle>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div :class="showCards == 'all' || showCards == 'development' ? 'block' : 'hidden' "
-          class="w-full px-4 md:w-1/2 xl:w-1/3">
-          <div class="relative mb-12">
-            <div class="overflow-hidden rounded-[10px]">
-              <img src="https://cdn.tailgrids.com/2.0/image/marketing/images/portfolio/portfolio-01/image-03.jpg"
-                alt="portfolio" class="w-full" />
-            </div>
-            <div
-              class="relative z-10 mx-7 -mt-20 rounded-lg bg-white dark:bg-dark-2 py-[34px] px-3 text-center shadow-portfolio dark:shadow-box-dark">
-              <span class="text-primary mb-2 block text-sm font-medium">
-                Development
-              </span>
-              <h3 class="text-dark dark:text-white mb-5 text-xl font-bold">
-                Web Design Trend
-              </h3>
-              <a href="javascript:void(0)"
-                class="text-body-color dark:text-dark-6 hover:border-primary hover:bg-primary inline-block rounded-md border border-stroke dark:border-dark-3 py-[10px] px-7 text-sm font-medium transition hover:text-white">
-                View Details
-              </a>
+        <div class="w-full px-4 md:w-1/2 xl:w-1/4">
+          <div class="mx-auto mb-10 w-full max-w-[370px]">
+            <div class="relative overflow-hidden rounded-lg">
+              <img src="./assets/images/portfolio/image-3.png" alt="image" class="w-full">
+              <div class="absolute left-0 w-full text-center bottom-5">
+                <div class="relative px-3 py-5 mx-5 overflow-hidden bg-white rounded-lg dark:bg-dark-2">
+                  <h3 class="text-base font-semibold text-dark dark:text-white">
+                    Usina Hidrelétrica de Colíder
+                  </h3>
+                  <p class="text-xs text-body-color dark:text-dark-6">
+                    Colíder - MT
+                  </p>
+                  <div>
+                    <span class="absolute bottom-0 left-0">
+                      <svg width="61" height="30" viewBox="0 0 61 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="45" r="45" fill="#13C296" fill-opacity="0.11"></circle>
+                      </svg>
+                    </span>
+                    <span class="absolute top-0 right-0">
+                      <svg width="20" height="25" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="0.706257" cy="24.3533" r="0.646687" transform="rotate(-90 0.706257 24.3533)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="24.3533" r="0.646687" transform="rotate(-90 6.39669 24.3533)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="24.3533" r="0.646687" transform="rotate(-90 12.0881 24.3533)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="24.3533" r="0.646687" transform="rotate(-90 17.7785 24.3533)"
+                          fill="#3056D3"></circle>
+                        <circle cx="0.706257" cy="18.6624" r="0.646687" transform="rotate(-90 0.706257 18.6624)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="18.6624" r="0.646687" transform="rotate(-90 6.39669 18.6624)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="18.6624" r="0.646687" transform="rotate(-90 12.0881 18.6624)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="18.6624" r="0.646687" transform="rotate(-90 17.7785 18.6624)"
+                          fill="#3056D3"></circle>
+                        <circle cx="0.706257" cy="12.9717" r="0.646687" transform="rotate(-90 0.706257 12.9717)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="12.9717" r="0.646687" transform="rotate(-90 6.39669 12.9717)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="12.9717" r="0.646687" transform="rotate(-90 12.0881 12.9717)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="12.9717" r="0.646687" transform="rotate(-90 17.7785 12.9717)"
+                          fill="#3056D3"></circle>
+                        <circle cx="0.706257" cy="7.28077" r="0.646687" transform="rotate(-90 0.706257 7.28077)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="7.28077" r="0.646687" transform="rotate(-90 6.39669 7.28077)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="7.28077" r="0.646687" transform="rotate(-90 12.0881 7.28077)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="7.28077" r="0.646687" transform="rotate(-90 17.7785 7.28077)"
+                          fill="#3056D3"></circle>
+                        <circle cx="0.706257" cy="1.58989" r="0.646687" transform="rotate(-90 0.706257 1.58989)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="1.58989" r="0.646687" transform="rotate(-90 6.39669 1.58989)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="1.58989" r="0.646687" transform="rotate(-90 12.0881 1.58989)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="1.58989" r="0.646687" transform="rotate(-90 17.7785 1.58989)"
+                          fill="#3056D3"></circle>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <div class="w-full px-4 md:w-1/2 xl:w-1/4">
+          <div class="mx-auto mb-10 w-full max-w-[370px]">
+            <div class="relative overflow-hidden rounded-lg">
+              <img src="./assets/images/portfolio/image-4.png" alt="image" class="w-full">
+              <div class="absolute left-0 w-full text-center bottom-5">
+                <div class="relative px-3 py-5 mx-5 overflow-hidden bg-white rounded-lg dark:bg-dark-2">
+                  <h3 class="text-base font-semibold text-dark dark:text-white">
+                    LT Corumbá IV
+                  </h3>
+                  <p class="text-xs text-body-color dark:text-dark-6">
+                    Novo Gama - GO
+                  </p>
+                  <div>
+                    <span class="absolute bottom-0 left-0">
+                      <svg width="61" height="30" viewBox="0 0 61 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="45" r="45" fill="#13C296" fill-opacity="0.11"></circle>
+                      </svg>
+                    </span>
+                    <span class="absolute top-0 right-0">
+                      <svg width="20" height="25" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="0.706257" cy="24.3533" r="0.646687" transform="rotate(-90 0.706257 24.3533)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="24.3533" r="0.646687" transform="rotate(-90 6.39669 24.3533)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="24.3533" r="0.646687" transform="rotate(-90 12.0881 24.3533)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="24.3533" r="0.646687" transform="rotate(-90 17.7785 24.3533)"
+                          fill="#3056D3"></circle>
+                        <circle cx="0.706257" cy="18.6624" r="0.646687" transform="rotate(-90 0.706257 18.6624)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="18.6624" r="0.646687" transform="rotate(-90 6.39669 18.6624)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="18.6624" r="0.646687" transform="rotate(-90 12.0881 18.6624)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="18.6624" r="0.646687" transform="rotate(-90 17.7785 18.6624)"
+                          fill="#3056D3"></circle>
+                        <circle cx="0.706257" cy="12.9717" r="0.646687" transform="rotate(-90 0.706257 12.9717)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="12.9717" r="0.646687" transform="rotate(-90 6.39669 12.9717)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="12.9717" r="0.646687" transform="rotate(-90 12.0881 12.9717)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="12.9717" r="0.646687" transform="rotate(-90 17.7785 12.9717)"
+                          fill="#3056D3"></circle>
+                        <circle cx="0.706257" cy="7.28077" r="0.646687" transform="rotate(-90 0.706257 7.28077)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="7.28077" r="0.646687" transform="rotate(-90 6.39669 7.28077)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="7.28077" r="0.646687" transform="rotate(-90 12.0881 7.28077)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="7.28077" r="0.646687" transform="rotate(-90 17.7785 7.28077)"
+                          fill="#3056D3"></circle>
+                        <circle cx="0.706257" cy="1.58989" r="0.646687" transform="rotate(-90 0.706257 1.58989)"
+                          fill="#3056D3"></circle>
+                        <circle cx="6.39669" cy="1.58989" r="0.646687" transform="rotate(-90 6.39669 1.58989)"
+                          fill="#3056D3"></circle>
+                        <circle cx="12.0881" cy="1.58989" r="0.646687" transform="rotate(-90 12.0881 1.58989)"
+                          fill="#3056D3"></circle>
+                        <circle cx="17.7785" cy="1.58989" r="0.646687" transform="rotate(-90 17.7785 1.58989)"
+                          fill="#3056D3"></circle>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <a href="/portfolio.html"
+          class="inline-flex items-center justify-center py-3 px-2 text-base font-medium text-center text-primary border border-transparent rounded-md hover:opacity-70">
+          -> Conheça as empresas que são nossas clientes
+        </a>
       </div>
     </div>
   </section>
