@@ -750,6 +750,14 @@ body {
   bottom: 1.25rem;
 }
 
+.bottom-4{
+  bottom: 1rem;
+}
+
+.top-4{
+  top: 1rem;
+}
+
 .-z-10{
   z-index: -10;
 }
@@ -840,6 +848,11 @@ body {
 .mx-5{
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+}
+
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .-ml-1{
@@ -1146,6 +1159,10 @@ body {
   width: 2rem;
 }
 
+.min-w-\[150px\]{
+  min-width: 150px;
+}
+
 .max-w-\[160px\]{
   max-width: 160px;
 }
@@ -1228,6 +1245,10 @@ body {
 
 .max-w-\[550px\]{
   max-width: 550px;
+}
+
+.max-w-\[200px\]{
+  max-width: 200px;
 }
 
 .-translate-y-1\/2{
@@ -1340,6 +1361,18 @@ body {
 
 .gap-6{
   gap: 1.5rem;
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .overflow-auto{
@@ -1637,6 +1670,14 @@ body {
 
 .p-6{
   padding: 1.5rem;
+}
+
+.p-2{
+  padding: 0.5rem;
+}
+
+.p-1{
+  padding: 0.25rem;
 }
 
 .px-1{
@@ -3016,8 +3057,17 @@ body {
     width: 100%;
   }
 
+  .lg\:min-w-min{
+    min-width: -moz-min-content;
+    min-width: min-content;
+  }
+
   .lg\:max-w-full{
     max-width: 100%;
+  }
+
+  .lg\:max-w-\[110px\]{
+    max-width: 110px;
   }
 
   .lg\:grid-cols-2{
@@ -3211,6 +3261,11 @@ body {
     line-height: 1.75rem;
   }
 
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .lg\:leading-tight{
     line-height: 1.25;
   }
@@ -3320,8 +3375,20 @@ body {
     width: 66.666667%;
   }
 
+  .xl\:w-7\/12{
+    width: 58.333333%;
+  }
+
+  .xl\:max-w-\[200px\]{
+    max-width: 200px;
+  }
+
   .xl\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .xl\:justify-end{
+    justify-content: flex-end;
   }
 
   .xl\:gap-8{
@@ -3371,6 +3438,10 @@ body {
     line-height: 1.75rem;
   }
 
+  .xl\:text-\[33px\]{
+    font-size: 33px;
+  }
+
   .xl\:leading-\[1\.21\]{
     line-height: 1.21;
   }
@@ -3395,5 +3466,10 @@ body {
 
   .\32xl\:p-\[60px\]{
     padding: 60px;
+  }
+
+  .\32xl\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
