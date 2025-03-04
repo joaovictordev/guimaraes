@@ -782,6 +782,34 @@ body {
   bottom: 8rem;
 }
 
+.top-40{
+  top: 10rem;
+}
+
+.bottom-10{
+  bottom: 2.5rem;
+}
+
+.bottom-16{
+  bottom: 4rem;
+}
+
+.-bottom-20{
+  bottom: -5rem;
+}
+
+.top-16{
+  top: 4rem;
+}
+
+.top-14{
+  top: 3.5rem;
+}
+
+.top-24{
+  top: 6rem;
+}
+
 .-z-10{
   z-index: -10;
 }
